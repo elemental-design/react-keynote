@@ -1,18 +1,16 @@
-import pptxgen from 'pptxgenjs';
+// import themeXml from './themeXml';
+// import { render } from 'react-keynote';
 import path from 'path';
+import React from 'react';
 
-// 1. Create a new Presentation
-const pptx = new pptxgen();
+import { render, Document, Slide, Text } from '../../../';
 
-pptx.layout = 'LAYOUT_16x9';
-
-// 2. Add a Slide
-const slide = pptx.addSlide();
-
-// 3. Add one or more objects (Tables, Shapes, Images, Text and Media) to the Slide
-const textboxText = 'Welcome!';
-const textboxOpts = { x: 0, y: 0, color: '000000', fontSize: 80 };
-slide.addText(textboxText, textboxOpts);
-
-// 4. Save the Presentation
-pptx.writeFile(path.resolve(__dirname, '../output/Sample Presentation.pptx'));
+render((
+  <Document title="Example">
+    <Slide>
+      <Text style={{ width: 100, color: '#1efa5a', textAlign: 'center' }}>
+        Hello World
+      </Text>
+    </Slide>
+  </Document>
+), path.resolve(__dirname, '../output/example2.pptx'));

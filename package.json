@@ -2,8 +2,11 @@
   "name": "react-keynote",
   "version": "0.0.1",
   "description": "React keynote renderer from jsx",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "start": "node lib/index.js",
+    "build": "babel -d lib src",
+    "watch": "babel -d lib src --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +21,10 @@
   },
   "homepage": "https://github.com/elemental-design/react-keynote#readme",
   "dependencies": {
-    "pptxgenjs": "^3.1.1"
+    "officegen": "^0.6.3",
+    "react": "^16.13.0",
+    "react-test-renderer": "^16.13.0",
+    "yoga-layout-prebuilt": "^1.9.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
