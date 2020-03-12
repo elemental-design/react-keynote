@@ -1,0 +1,42 @@
+{
+  "name": "react-keynote",
+  "version": "0.0.1",
+  "description": "React keynote renderer from jsx",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node lib/index.js",
+    "build": "babel -d lib src",
+    "watch": "babel -d lib src --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elemental-design/react-keynote.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elemental-design/react-keynote/issues"
+  },
+  "homepage": "https://github.com/elemental-design/react-keynote#readme",
+  "dependencies": {
+    "officegen": "^0.6.3",
+    "react": "^16.13.0",
+    "react-test-renderer": "^16.13.0",
+    "yoga-layout-prebuilt": "^1.9.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "@rollup/plugin-json": "^4.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup": "^2.0.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "typescript": "^3.8.3"
+  }
+}
