@@ -1,5 +1,5 @@
 # react-keynote
-React keynote renderer from jsx
+React keynote renderer from jsx. (work in progress, proof of concept version coming soon)
 
 ## Example Code
 
@@ -24,6 +24,16 @@ render((
       </View>
     </Slide>
   </Document>
-), path.resolve(__dirname), context.document());
+));
+
+/* or 
+const jsx = (
+  ...
+);
+
+const [document] = document.getDocuments({ name: 'Existing Document Name' });
+
+render(jsx, document);
+*/
 
 ```
