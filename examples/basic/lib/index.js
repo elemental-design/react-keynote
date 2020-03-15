@@ -11,11 +11,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // import themeXml from './themeXml';
 // import { render } from 'react-keynote';
 (0, _.render)(_react.default.createElement(_.Document, {
-  title: "Example"
-}, _react.default.createElement(_.Slide, null, _react.default.createElement(_.Text, {
-  style: {
-    width: 100,
-    color: '#1efa5a',
-    textAlign: 'center'
-  }
-}, "Hello World"))), _path.default.resolve(__dirname, '../output/example2.pptx'));
+  title: "Test",
+  theme: "White"
+}, _react.default.createElement(_.Slide, {
+  title: "Hello World"
+}), _react.default.createElement(_.Slide, null, _react.default.createElement(_.Slide.Title, null, "Hello World Page 2..."), _react.default.createElement(_.Slide.Body, null, "Subtitle")), _react.default.createElement(_.Slide, null, _react.default.createElement(_.Slide.Title, null, "Hello World Page 3..."), _react.default.createElement(_.Slide.Body, null, "Hello World. This is the text body..."))));
