@@ -3,6 +3,8 @@ React keynote renderer from jsx (work in progress and API is not stable yet).
 
 ## Getting Started
 
+Make sure you are on a Mac, that you have iWork Keynote installed, and have Node.js installed.
+
 ```sh
 npm i react-keynote
 ```
