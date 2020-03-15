@@ -1,5 +1,11 @@
 # react-keynote
-React keynote renderer from jsx. (work in progress, proof of concept version coming soon)
+React keynote renderer from jsx (work in progress and API is not stable yet).
+
+## Getting Started
+
+```sh
+npm i react-keynote
+```
 
 ## Example Code
 
