@@ -6,11 +6,23 @@ import React from 'react';
 import { render, Document, Slide, Text } from '../../../';
 
 render((
-  <Document title="Example">
+  <Document title="Test" theme="White">
+    <Slide title="Hello World" />
     <Slide>
-      <Text style={{ width: 100, color: '#1efa5a', textAlign: 'center' }}>
-        Hello World
-      </Text>
+      <Slide.Title>
+        Hello World Page 2...
+      </Slide.Title>
+      <Slide.Body>
+        Subtitle
+      </Slide.Body>
+    </Slide>
+    <Slide>
+      <Slide.Title>
+        Hello World Page 3...
+      </Slide.Title>
+      <Slide.Body>
+        Hello World. This is the text body...
+      </Slide.Body>
     </Slide>
   </Document>
-), path.resolve(__dirname, '../output/example2.pptx'));
+));

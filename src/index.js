@@ -1,6 +1,4 @@
 
-import render from './render';
+export * from './components';
 
-export { render };
-
-export { Document, Slide, Text } from './components';
+export { render } from './renderer';
